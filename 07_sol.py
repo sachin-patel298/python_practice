@@ -1,7 +1,9 @@
-while True:
-   number=int(input("Enter A Number B/w 1 and 10 :- "))
-   if 1 <= number <= 10:
-      print("Thanks")
-      break
-   else :
-      print("Number Invalid , Try Again")
+def  sum_all(*args):
+    print(args)
+    for i in args:
+        print(i * 2)
+    return sum(args)
+
+print(sum_all(1,2,3))
+print(sum_all(1,2,3,4,5))
+print(sum_all(1,2,3,4,5,6,7))

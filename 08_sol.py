@@ -1,10 +1,7 @@
-number = 28
+def print_kwargs(**kwargs):
+    for key,value in kwargs.items():
+        print( f"{key}: {value}")
 
-is_prime = True
-
-if number > 1 :
-    for i in range(2,number):
-        if (number % i)== 0:
-            is_prime = False
-            break
-print("Number is A Prime Number :- ",is_prime)
+print_kwargs(name = "Thor" , Power = "Hammer")
+print_kwargs(name = "Thor")
+print_kwargs(name = "Thor" , Power = "Hammer", enemy = "Hulk")
