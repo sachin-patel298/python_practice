@@ -1,6 +1,4 @@
-n = int(input("Enter a Number"))
-sum_even = 0
-for i in range(1,n+1) :
-    if  i % 2 == 0: 
-        sum_even += 1
-print("Even Number",sum_even) 
+def sum(A,B):
+    return A+B
+result = sum(5,5)
+print("Sum Of Two Number Is :- ",result)

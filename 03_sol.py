@@ -1,7 +1,5 @@
-number = 3
-
-for i in range (1,11):
-    if i == 5:
-        continue
-    print(number,"x",i,'=', number * i)
-     
+def multiply(A1,A2):
+    return A1*A2
+print(multiply(5,5))
+print(multiply('a',5))
+print(multiply(5,'a'))
