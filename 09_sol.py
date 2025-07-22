@@ -1,6 +1,9 @@
-year = 2024
+items = ["apple","banana","orange","apple","Mango"]
 
-if (year % 400 == 0)or(year % 4 == 0 and year % 100 != 0):
-    print(year,"Year Is A Leap Year")
-else:
-    print(year,"Is Not Leap Year")
+unique_item = set()
+
+for item in items :
+    if item in unique_item:
+        print("Duplicate :- ",item)
+        break
+    unique_item.add(item)

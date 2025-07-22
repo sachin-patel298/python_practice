@@ -1,12 +1,7 @@
-fruite = "Banana"
-Color= "Yellow"
+input_str = "Python"
+reversed_str = ""
 
-if fruite == "Banana" :
-    if Color == "Green":
-        print("Unripe")
-    elif Color == "Yellow":
-        print("Ripe")
-    elif Color == "Brown":
-        print("Overripe")
-else:
-    print("Not This Fruite")
+for char in input_str:
+     reversed_str = char + reversed_str
+
+print(reversed_str)

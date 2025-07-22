@@ -1,16 +1,11 @@
-pet = "cat"
-petAge = 6
+import time
 
-if pet == "dog":
-    if petAge < 2 :
-        food = "Puppy Foood"
-    else:
-        food = "Adult Foood"
+wait_time = 1
+max_retries = 5
+attempts = 0
 
-elif pet == "cat":
-    if petAge > 5 :
-        food = "Senior Cat Foood"
-    else:
-        food = "Junior Cat Foood"
-
-print(food)
+while attempts < max_retries:
+    print("Attempt",attempts + 1 ,"- Wait time",wait_time )
+    time.sleep(wait_time)
+    wait_time *= 2
+    attempts +=1

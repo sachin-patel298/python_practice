@@ -1,8 +1,7 @@
-weather = "Snowy"
+str = "teeteracdacd"
 
-if weather == "Sunny":
-    print("GO For Walk")
-elif weather=="Rainy":
-    print("Read A Book")
-elif weather == "Snowy":
-    print("Build a Snowman")
+for char in str:
+   print(char)
+   if str.count(char) == 1:
+      print ("Char Is :- ",char)
+      break

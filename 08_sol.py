@@ -1,9 +1,10 @@
-Pass = "Sachi78"
-length = len(Pass)
+number = 28
 
-if length < 6 :
-    print("Password Is Weak")
-elif length < 10 :
-    print("Password Is Medium")
-elif length > 10 :
-    print("Password Is Strong")
+is_prime = True
+
+if number > 1 :
+    for i in range(2,number):
+        if (number % i)== 0:
+            is_prime = False
+            break
+print("Number is A Prime Number :- ",is_prime)
